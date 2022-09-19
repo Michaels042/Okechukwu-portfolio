@@ -1,4 +1,8 @@
 
+  setTimeout(function(){
+    window.location.href = 'https://michaels042.github.io/Okechukwu-portfolio/';
+ }, 5000);
+ 
 const menu_btn = document.querySelector('.hamburger');
 const mobile_menu = document.querySelector('.mobile-nav');
 const desktop_menu = document.querySelector('.top-nav');
