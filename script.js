@@ -1,33 +1,31 @@
+// setTimeout(function () {
+//   window.location.href = "https://michaels042.github.io/Okechukwu-portfolio/";
+// }, 5000);
 
-  setTimeout(function(){
-    window.location.href = 'https://michaels042.github.io/Okechukwu-portfolio/';
- }, 5000);
- 
-const menu_btn = document.querySelector('.hamburger');
-const mobile_menu = document.querySelector('.mobile-nav');
-const desktop_menu = document.querySelector('.top-nav');
+const menu_btn = document.querySelector(".hamburger");
+const mobile_menu = document.querySelector(".mobile-nav");
+const desktop_menu = document.querySelector(".top-nav");
 
-
-menu_btn.addEventListener('click', function () {
-    menu_btn.classList.toggle('is-active');
-    mobile_menu.classList.toggle('is-active');
-    desktop_menu.classList.toggle('is-active');
+menu_btn.addEventListener("click", function () {
+  menu_btn.classList.toggle("is-active");
+  mobile_menu.classList.toggle("is-active");
+  desktop_menu.classList.toggle("is-active");
 });
 
 function readMoreHtml() {
-    var element = document.getElementById("moreHtml");
-    element.classList.toggle('show');
-  }
+  let element = document.getElementById("moreHtml");
+  element.classList.toggle("show");
+}
 
-  function readMoreCss() {
-    var element = document.getElementById('moreCss');
-    element.classList.toggle('show');
-  }
+function readMoreCss() {
+  let element = document.getElementById("moreCss");
+  element.classList.toggle("show");
+}
 
-  function readMoreJs() {
-    var element = document.getElementById('moreJs');
-    element.classList.toggle('show');
-  }
+function readMoreJs() {
+  let element = document.getElementById("moreJs");
+  element.classList.toggle("show");
+}
 
 // function readMoreHtml() {
 //     var mhtml = document.getElementById("moreHtml");
@@ -38,8 +36,6 @@ function readMoreHtml() {
 //     };
 //   };
 
-
-
 //   function readMoreCss() {
 //     var mcss = document.getElementById("moreCss");
 //     if (mcss.style.color === "black") {
@@ -48,7 +44,6 @@ function readMoreHtml() {
 //       mcss.style.color = "black";
 //     };
 //   };
-
 
 //   function readMoreJs() {
 //     var mjs = document.getElementById("moreJs");

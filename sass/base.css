@@ -4,6 +4,32 @@ body {
   padding: 0px;
 }
 
+nav {
+  -webkit-animation: nav-load 300ms;
+          animation: nav-load 300ms;
+  background-color: black;
+  color: white;
+  margin-top: 0;
+  z-index: 100;
+}
+
+@-webkit-keyframes nav-load {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes nav-load {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 .splash {
   background-color: #1d2630;
   font-family: sans-serif;

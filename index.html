@@ -1,203 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./sass/base.css">
-    <!-- <script src="https://kit.fontawesome.com/c8e4d183c2.js">crossorigin="anonymous"</script> -->
-    <link rel="stylesheet" href="./assets/fontawesome-free-5.14.0-web/css/all.min.css">
-    <!-- <link rel="stylesheet" href="./assets/bootstrap-4.2.1-dist/css/bootstrap.min.css"> -->
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./sass/base.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/fontawesome-free-5.14.0-web/css/all.min.css"
+    />
+
     <title>Mike-Touch</title>
-</head>
-<body>
+  </head>
+  <body>
     <section>
-        <nav class="top-nav">
-            
-                <a href="#" class="logo">
-                    <img src="./assets/images/logo.png" alt="logo">
-                    <h6 class="logo-text">...unparalleled digital solutions</h6>
-                </a>
+      <nav class="top-nav">
+        <a href="#" class="logo">
+          <img src="./assets/images/logo.png" alt="logo" />
+          <h6 class="logo-text">...unparalleled digital solutions</h6>
+        </a>
 
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#section2">About</a></li>
-                    <li><a href="#section3">Skills</a></li>
-                    <li><a href="#section4">Services</a></li>
-                    <li><a href="#section5">Contact Us</a></li>
-                </ul>
-                <!-- bars........................ -->
-                <button class="hamburger">
-                    <div class="bar"></div>
-                </button>    
-            
-        </nav>
-        <nav class="mobile-nav">    
-            <a href="#">Home</a>
-            <a href="#section2">About</a>
-            <a href="#section3">Skills</a>
-            <a href="#section4">Services</a>
-            <a href="#section5">Contact</a>
-        </nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#section2">About</a></li>
+          <li><a href="#section3">Skills</a></li>
+          <li><a href="#section4">Services</a></li>
+          <li><a href="#section5">Contact Us</a></li>
+        </ul>
+        <!-- bars........................ -->
+        <button class="hamburger">
+          <div class="bar"></div>
+        </button>
+      </nav>
+      <nav class="mobile-nav">
+        <a href="#">Home</a>
+        <a href="#section2">About</a>
+        <a href="#section3">Skills</a>
+        <a href="#section4">Services</a>
+        <a href="#section5">Contact</a>
+      </nav>
 
-        <div id="section1" class="text-container">
-            <p>Hello</p>
-            <p>I'M Michael</p>
-            <p>a Frontend developer</p>
-            <!-- <button class="hire-btn">Hire Me</button> -->
-            <a href="#section5"><button class="down-cv">Contact Me</button></a>
-        </div>
-
-        <img src="./assets/images/home.png" class="model" alt="model">
-
+      <div id="section1" class="text-container">
+        <p>Hello</p>
+        <p>I'M Michael</p>
+        <p>a Frontend developer</p>
+        <a href="#section5"><button class="down-cv">Contact Me</button></a>
+      </div>
     </section>
 
     <div id="section2" class="about-container">
-        <img src="./assets/images/about.png" alt="">
-        <div class="about-text">
-            <p>About Me</p>
-            <p>Developer & Designer</p>
-            <p>I'm a Frontend developer and 
-                also a designer.I transform digital projects from 
-                ideas to reality in record time.
-                My ultimate drive is my client satisfaction.
-            </p>
-            <p>
-                I use my passion and skills to create digital products and
-                experiences. National and International clients rely on me for
-                 design implementation and management of their digital products.
-                 As a freelancer, i work with web development agencies, companies, 
-                 start-ups and individuals to create a blueprint for their digital business.
-            </p>
-            <a href="#section5"><button>Contact Me</button></a>
-        </div>
+      <img src="./assets/images/about.png" alt="" />
+      <div class="about-text">
+        <p>About Me</p>
+        <p>Developer & Designer</p>
+        <p>
+          I'm a Frontend developer and also a designer.I transform digital
+          projects from ideas to reality in record time. My ultimate drive is my
+          client satisfaction.
+        </p>
+        <p>
+          I use my passion and skills to create digital products and
+          experiences. National and International clients rely on me for design
+          implementation and management of their digital products. As a
+          freelancer, i work with web development agencies, companies, start-ups
+          and individuals to create a blueprint for their digital business.
+        </p>
+        <a href="#section5"><button>Contact Me</button></a>
+      </div>
     </div>
 
     <div id="section3" class="skills">
-        <div class="skills-text">
-            <p>Skills</p>
-            <p>Proficient Skills</p>
-            <p>In search of a web developer with unique skills set? Look no further.
-                 I provide a vast array of skills relevant in mordern day project 
-                 design and implementation.
-            </p>
+      <div class="skills-text">
+        <p>Skills</p>
+        <p>Proficient Skills</p>
+        <p>
+          In search of a web developer with unique skills set? Look no further.
+          I provide a vast array of skills relevant in mordern day project
+          design and implementation.
+        </p>
+      </div>
+      <div class="box-container">
+        <div class="bx box-1">
+          <span>1</span>
+          <p class="heading">HTML</p>
+          <p class="details">
+            As is customary in web development, I set up the skeletal structure
+            of my projects with HTML
+          </p>
+
+          <p id="moreHtml">HTML 5<br />Thanks for clicking</p>
+
+          <button onclick="readMoreHtml()">Dont'Click!!!</button>
         </div>
-        <div class="box-container">
-            <div class="bx box-1">
-                <span>1</span>
-                <p class="heading">HTML</p>
-                <p class="details">As is customary in web development, I set up the
-                     skeletal structure of my projects with HTML
-                </p>
-                <!-- <div id="showHtml">
-                </div> -->
-                <p id="moreHtml">HTML 5<br>Thanks for clicking</p>
+        <div class="bx box-2">
+          <span>2</span>
+          <p class="heading">CSS</p>
+          <p class="details">
+            As universally accepted, I uniquely style my work with CSS. This
+            gives me the opportunity to tell my clients stories better.
+          </p>
+          <p id="moreCss">CSS-3 and SASS<br />Thanks for clicking</p>
 
-                <button onclick="readMoreHtml()">Dont'Click!!!</button>
-                
-            </div>
-            <div class="bx box-2">
-                <span>2</span>
-                <p class="heading">CSS</p>
-                <p class="details">As universally accepted, I uniquely style my work with CSS.
-                    This gives me the opportunity to tell my clients stories better.
-                </p>
-                <p id="moreCss">CSS-3 and SASS<br>Thanks for clicking</p>
-
-                <button onclick="readMoreCss()">Dont'Click!!!</button>
-            </div>
-            <div class="bx box-3">
-                <span>3</span>
-                <p class="heading">JavaScript</p>
-                <p class="details">Like most renowned developers I explore the waters of Java script without reservations.
-                    This avails me the privilege of giving life to my clients projects.
-                </p>
-                <p id="moreJs">Vanilla Js, React Js and Vue Js<br>Thanks for clicking</p>
-
-                <button onclick="readMoreJs()">Dont'Click!!!</button>
-
-            </div>
-
+          <button onclick="readMoreCss()">Dont'Click!!!</button>
         </div>
+        <div class="bx box-3">
+          <span>3</span>
+          <p class="heading">JavaScript</p>
+          <p class="details">
+            Like most renowned developers I explore the waters of Java script
+            without reservations. This avails me the privilege of giving life to
+            my clients projects.
+          </p>
+          <p id="moreJs">
+            Vanilla Js, React Js and Vue Js<br />Thanks for clicking
+          </p>
+
+          <button onclick="readMoreJs()">Dont'Click!!!</button>
+        </div>
+      </div>
     </div>
 
     <div id="section4" class="services">
-        <div class="services-text">
-            <p>Services</p>
-            <p><i>"my work is my bond"</i></p>
-            <p>Do you you want a website or mobile app for your business? Contact me.
-                I design and implement projects in record time.
-                 My ultimate drive is my client satisfaction.
-            </p>
+      <div class="services-text">
+        <p>Services</p>
+        <p><i>"my work is my bond"</i></p>
+        <p>
+          Do you you want a website or mobile app for your business? Contact me.
+          I design and implement projects in record time. My ultimate drive is
+          my client satisfaction.
+        </p>
+      </div>
+      <div class="box-container">
+        <div class="bx box-1">
+          <span>1</span>
+          <p class="heading">Mock-Up Design</p>
+          <p class="details">
+            I design the layout of digital products using tools like Figma,
+            Adobe Xd and the likes.
+          </p>
         </div>
-        <div class="box-container">
-            <div class="bx box-1">
-                <span>1</span>
-                <p class="heading">Mock-Up Design</p>
-                <p class="details">I design the layout of digital products using
-                     tools like Figma, Adobe Xd and the likes.</p>
-            </div>
-            <div class="bx box-2">
-                <span>2</span>
-                <p class="heading">Web Development</p>
-                <p class="details">Transformation of clients projects from mockup
-                     to interactive websites with tools such as React Js and Vue Js.</p>
-            </div>
-            <div class="bx box-3">
-                <span>3</span>
-                <p class="heading">App Development</p>
-                <p class="details">Taking clients businesses closer to their customers 
-                    by creating mobile apps compartible with both android and ios devices.</p>
-            </div>
+        <div class="bx box-2">
+          <span>2</span>
+          <p class="heading">Web Development</p>
+          <p class="details">
+            Transformation of clients projects from mockup to interactive
+            websites with tools such as React Js and Vue Js.
+          </p>
         </div>
+        <div class="bx box-3">
+          <span>3</span>
+          <p class="heading">App Development</p>
+          <p class="details">
+            Taking clients businesses closer to their customers by creating
+            mobile apps compartible with both android and ios devices.
+          </p>
+        </div>
+      </div>
     </div>
 
     <div id="section5" class="contact-me">
-        <p>Do you have a project in mind?</p>
-        <div class="contact-info">
-            <h3>Call/Whatsapp: +234 0703 964 6424</h3>
-            <h3> Email: mnwachukwu042@gmail.com</h3>
-        </div>
+      <p>Do you have a project in mind?</p>
+      <div class="contact-info">
+        <h3>Call/Whatsapp: +234 0703 964 6424</h3>
+        <h3>Email: mnwachukwu042@gmail.com</h3>
+      </div>
     </div>
 
     <footer>
-        <h1>
-            <span>
-                <img src="./assets/images/logo.png" alt="">
-            </span>
-            <span>M</span>
-            <span>i</span>
-            <span>k</span>
-            <span>e</span>
-            <span>-</span>
-            <span>T</span>
-            <span>o</span>
-            <span>u</span>
-            <span>c</span>
-            <span>h</span>
-        </h1>
-       
-        <div class="social-icons">
-            <!-- <a href="#"> <i class="fab fa-facebook-f"></i> </a> -->
-            <a href="https://https://twitter.com/vendicibarel"> <i class="fab fa-twitter"></i> </a>
-            <a href="https://github.com/Michaels042"> <i class="fab fa-github"></i> </a>
-            <!-- <a href="#"> <i class="fab fa-instagram"></i> </a> -->
-            <a href="https://linkedin.com/in/okechukwu-michael-nwachukwu-6645706a"> <i class="fab fa-linkedin"></i> </a>
-            <!-- <i class="fa-brands fa-github"></i> -->
-        </div>
+      <h1>
+        <span>
+          <img src="./assets/images/logo.png" alt="" />
+        </span>
+        <span>M</span>
+        <span>i</span>
+        <span>k</span>
+        <span>e</span>
+        <span>-</span>
+        <span>T</span>
+        <span>o</span>
+        <span>u</span>
+        <span>c</span>
+        <span>h</span>
+      </h1>
 
-        <p class="copyright"><i class="fa fa-copyright">&nbsp; 2022 Mike-Touch</i></p>
-        <!-- <p class="copyright">Copyright by Mike-Touch 2022</p> -->
+      <div class="social-icons">
+        <!-- <a href="#"> <i class="fab fa-facebook-f"></i> </a> -->
+        <a href="https://https://twitter.com/vendicibarel">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://github.com/Michaels042">
+          <i class="fab fa-github"></i>
+        </a>
+        <!-- <a href="#"> <i class="fab fa-instagram"></i> </a> -->
+        <a href="https://linkedin.com/in/okechukwu-michael-nwachukwu-6645706a">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <!-- <i class="fa-brands fa-github"></i> -->
+      </div>
+
+      <p class="copyright">
+        <i class="fa fa-copyright">&nbsp; 2022 Mike-Touch</i>
+      </p>
+      <!-- <p class="copyright">Copyright by Mike-Touch 2022</p> -->
     </footer>
 
     <div class="a-social-b">
-        <!-- <a href="#"> <i class="fab fa-facebook-f"></i> </a> -->
-        <a href="https://https://twitter.com/vendicibarel"> <i class="fab fa-twitter"></i> </a>
-        <a href="https://github.com/Michaels042"> <i class="fab fa-github"></i> </a>
-        <a href="https://linkedin.com/in/okechukwu-michael-nwachukwu-6645706a"> <i class="fab fa-linkedin"></i> </a>
+      <!-- <a href="#"> <i class="fab fa-facebook-f"></i> </a> -->
+      <a href="https://https://twitter.com/vendicibarel">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="https://github.com/Michaels042">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://linkedin.com/in/okechukwu-michael-nwachukwu-6645706a">
+        <i class="fab fa-linkedin"></i>
+      </a>
     </div>
     <script src="./script.js"></script>
-    
-</body>
+  </body>
 </html>
