@@ -65,7 +65,7 @@ nav {
 .splash .container .loading .line-box .line {
   height: 20px;
   border-radius: 20px;
-  background: #67D295;
+  background: #67d295;
   -webkit-animation: loading 5s forwards cubic-bezier(0, 0, 0, 0);
           animation: loading 5s forwards cubic-bezier(0, 0, 0, 0);
 }
@@ -163,7 +163,8 @@ nav ul li a .active {
   color: #191919;
 }
 
-.logo img:hover {
+.logo img:hover,
+.hero-logo img:hover {
   -webkit-animation: rotation 4s infinite linear;
           animation: rotation 4s infinite linear;
 }
@@ -185,7 +186,18 @@ nav ul li a .active {
     transform: rotate(359deg);
   }
 }
-.logo .active {
+.hero-logo img {
+  width: 70%;
+}
+
+.hero-logo {
+  position: absolute;
+  top: 25%;
+  left: 70%;
+  transform: translateX(-70%);
+}
+
+.active {
   font-weight: 800;
   color: #2d2a2a;
 }
@@ -203,7 +215,9 @@ nav ul li a .active {
   border: none;
 }
 
-.hamburger .bar, .hamburger:after, .hamburger:before {
+.hamburger .bar,
+.hamburger:after,
+.hamburger:before {
   content: "";
   display: block;
   width: 100%;
@@ -339,15 +353,6 @@ button:active {
   transform: scale(1.1);
 }
 
-.model {
-  height: 560px;
-  position: absolute;
-  bottom: 40px;
-  left: 70%;
-  transform: translateX(-70%);
-  border-radius: 20px;
-}
-
 .about-container {
   width: 80%;
   height: 430px;
@@ -473,7 +478,14 @@ button:active {
   margin: 50px 0px;
 }
 
-.box-1, .box-2, .box-3, .box-4, .box-5, .box-6, .box-7, .box-8 {
+.box-1,
+.box-2,
+.box-3,
+.box-4,
+.box-5,
+.box-6,
+.box-7,
+.box-8 {
   width: 300px;
   height: 320px;
   background-repeat: no-repeat;
@@ -776,14 +788,15 @@ footer p:nth-child(2) {
   * {
     box-sizing: border-box;
   }
-  .model {
+  .hero-logo {
     height: 360px;
-    top: 30%;
-    transform: translateX(-50%);
-    border-radius: 50%;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-30%);
   }
-  .model img {
-    border-radius: 50% !important;
+  .hero-logo img {
+    transform: scale(0.5);
+    left: 50%;
   }
   .text-container {
     top: 16%;
@@ -812,7 +825,8 @@ footer p:nth-child(2) {
 .about-text p:nth-child(4) {
     font-size: 14px;
   }
-  .services, .skills {
+  .services,
+.skills {
     padding: 2% 5% 0px 5%;
     height: auto;
   }
@@ -820,7 +834,9 @@ footer p:nth-child(2) {
     justify-content: center;
     flex-wrap: wrap;
   }
-  .box-1, .box-2, .box-3 {
+  .box-1,
+.box-2,
+.box-3 {
     flex-grow: 1;
     margin: 10px;
   }
@@ -841,7 +857,7 @@ footer p:nth-child(2) {
     background-image: none;
     background-color: #f7f7f7;
   }
-  .model {
+  .hero-logo {
     display: none;
   }
   .toogle {
@@ -905,7 +921,8 @@ footer p:nth-child(2) {
     width: 90%;
     text-align: center;
   }
-  .services-text, .skills-text {
+  .services-text,
+.skills-text {
     width: 100%;
   }
   .contact-me {
